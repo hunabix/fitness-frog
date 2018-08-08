@@ -42,8 +42,7 @@
                 </a>
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                </ul>
+                <ul class="nav navbar-nav"></ul>
                 <a href="@Url.Action("Add", "Entries")" style="visibility: @GetAddEntryButtonVisibility()"
                    class="btn btn-primary navbar-btn navbar-right">
                     <span class="glyphicon glyphicon-plus"></span> Add Entry
@@ -62,5 +61,11 @@
 
     <script src="~/Scripts/jquery-1.10.2.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/bootstrap-datepicker.min.js"></script>
+    <script>
+        $('input.datepicker').datepicker({
+            format: 'm/d/yyyy'
+        });
+    </script>
 </body>
 </html>
